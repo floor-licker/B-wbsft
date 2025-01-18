@@ -27,7 +27,8 @@ Clone the repository to your local machine
 ```git clone https://github.com/floor-licker/B-wbsft.git```
 
 Navigate to root directory
-```cd wbsft-B```
+
+```cd B-wbsft```
 
 
 
