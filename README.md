@@ -24,7 +24,10 @@ you attempted to use `b create-account` incorrectly, you would see: `Usage: b cr
 ## Set-up
 Clone the repository to your local machine
 
-`git clone https://github.com/floor-licker/B-wbsft.git`
+```git clone https://github.com/floor-licker/B-wbsft.git```
+
+Navigate to root directory
+```cd wbsft-B```
 
 
 
