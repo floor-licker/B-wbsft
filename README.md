@@ -9,11 +9,18 @@ Blockchain Simulation in C++
 - It's said that 'Ctrl+C' should end the simulation. In most terminals 'Ctrl+C' is already assigned to abort the current task and regain user control, so no command/hot-key assignment needs to be done here
 
 ## Dependency Graph
+
+When rendered, it will look like this:
+
 ```mermaid
 graph TD
-    A[main.cpp] --> B[Node.h]
-    A --> C[Node.cpp]
-    B --> D[Transaction.h]
-    B --> E[Block.h]
-    C --> B
+    A["main.cpp"] --> B["Node.h"]
+    A["main.cpp"] --> C["Node.cpp"]
+    B["Node.h"] --> D["Transaction.h"]
+    B["Node.h"] --> E["Block.h"]
+    C["Node.cpp"] --> B["Node.h"]
+    
+    %% Class Relationships
+    F["Node Class"] --> D["Transaction.h"]
+    F["Node Class"] --> E["Block.h"]
 ```
