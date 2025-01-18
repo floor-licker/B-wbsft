@@ -1,5 +1,5 @@
 # B-wbsft
-Blockchain Simulation in C++
+Blockchain Simulation in C++ for Charles, Utkarsh, and Jérémie.
 
 
 ## Assumptions
