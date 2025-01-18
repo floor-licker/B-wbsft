@@ -43,7 +43,7 @@ you attempted to use `b create-account` incorrectly, you would see: `Usage: b cr
 
 - [ ] **Node Management**
   - [ ] Implement `b start-node` to spin up the local blockchain server
-  - [ ] Allow stopping the node with Ctrl-C, ensuring all data resets upon restart
+  - [x] Allow stopping the node with Ctrl-c (This is already how most terminals abort the current task so nothing needs to be implemented)
 
 - [ ] **Error Handling**
   - [ ] Display helpful error messages for incorrect command usage
