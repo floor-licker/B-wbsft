@@ -74,7 +74,7 @@ By running the executable we initiate the program and can begin calling commands
 ```
 ./b
 ```
-From here we can start the node by calling 
+Now the simulation environment has been initiated and we can begin calling the environment's functions. To start the node:
 
 ```
 b start-node
