@@ -81,6 +81,12 @@ Now we can begin calling the environmental functions. To start the node:
 b start-node
 ```
 
+For a list of functions and how to parameterize them, call
+
+'''
+b help
+'''
+
 
 ## Checklist
 
