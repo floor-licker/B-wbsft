@@ -46,6 +46,8 @@ Then to install CMake
 ```
 choco install cmake --installargs 'ADD_CMAKE_TO_PATH=System'
 ```
+
+***After CMake Installation***
 Now that CMake is intalled on your machine, clone this repository using git
 
 ```git clone https://github.com/floor-licker/B-wbsft.git```
