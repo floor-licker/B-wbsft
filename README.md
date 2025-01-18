@@ -22,8 +22,9 @@ Blockchain Simulation in C++ for Charles, Utkarsh, and Jérémie.
 you attempted to use `b create-account` incorrectly, you would see: `Usage: b create-account <account-id> <starting-balance>` which displays proper parameterization of that command
 
 ## Set-up
+Clone the repository to your local machine
 
-`git clone
+`git clone https://github.com/floor-licker/B-wbsft.git`
 
 
 
