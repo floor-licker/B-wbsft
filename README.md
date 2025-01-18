@@ -24,29 +24,30 @@ you attempted to use `b create-account` incorrectly, you would see: `Usage: b cr
 
 ## Checklist
 
-- [ ] **Block Creation**
-  - [ ] Create new blocks every 10 seconds (T=10, T=20, T=30, etc.)
+- [x] **Block Creation**
+  - [x] Create new blocks every 10 seconds (T=10, T=20, T=30, etc.)
 
-- [ ] **Commands**
-  - [ ] **Account Creation**
-    - [ ] Implement `b create-account <id-of-account> <starting-balance>`
-    - [ ] Create a new account with the specified ID and starting balance
+- [x] **Commands**
+  - [x] **Account Creation**
+    - [x] Implement `b create-account <id-of-account> <starting-balance>`
+    - [x] Create a new account with the specified ID and starting balance
   - [ ] **Fund Transfer**
-    - [ ] Implement `b transfer <from-account> <to-account> <amount>`
-    - [ ] Send funds from one account to another
-    - [ ] Handle confirmation times based on transaction time:
-      - [ ] Transactions sent at T=7 take 3 seconds to confirm
-      - [ ] Transactions sent at T=12 take 8 seconds to confirm
-  - [ ] **Balance Check**
-    - [ ] Implement `b balance <account>`
-    - [ ] Immediately display the account balance
+    - [x] Implement `b transfer <from-account> <to-account> <amount>`
+    - [x] Send funds from one account to another
+    - [ ] Error handling for insufficient funds
+    - [x] Handle confirmation times based on transaction time:
+      - [x] Transactions sent at T=7 take 3 seconds to confirm
+      - [x] Transactions sent at T=12 take 8 seconds to confirm
+  - [x] **Balance Check**
+    - [x] Implement `b balance <account>`
+    - [x] Immediately display the account balance
 
-- [ ] **Node Management**
-  - [ ] Implement `b start-node` to spin up the local blockchain server
+- [x] **Node Management**
+  - [x] Implement `b start-node` to spin up the local blockchain server
   - [x] Allow stopping the node with Ctrl-c (This is already how most terminals abort the current task so nothing needs to be implemented)
 
 - [ ] **Error Handling**
   - [ ] Display helpful error messages for incorrect command usage
 
-- [ ] **Additional Constraints**
-  - [ ] Implmentation should be of the form that there is no permanent data storage; reset state upon node restart.
+- [x] **Miscellaneouss**
+  - [x] Implmentation should be of the form that there is no permanent data storage; reset state upon node restart.
