@@ -14,16 +14,8 @@ Blockchain Simulation in C++
 ```mermaid
 graph LR
     A["main.cpp"] --> B["Node.h"]
-    A["main.cpp"] --> C["Node.cpp"]
-    B["Node.h"] --> D["Transaction.h"]
-    B["Node.h"] --> E["Block.h"]
-    C["Node.cpp"] --> B["Node.h"]
-    
-    %% Class Relationships
-    F["Node Class"] --> D["Transaction.h"]
-    F["Node Class"] --> E["Block.h"]
-    
-    %% Custom Styles
-    classDef fileNode fill:#f9f,stroke:#333,stroke-width:2px;
-    class A,B,C,D,E,F fileNode;
+    A --> C["Node.cpp"]
+    B --> D["Transaction.h"]
+    B --> E["Block.h"]
+    C --> B
 ```
