@@ -12,3 +12,13 @@ Blockchain Simulation in C++
 
 
 ![Dependency Graph](dependency_graph.svg)
+
+## Features
+- If user enters an invalid command, i.e., doesn't begin with 'b', the program prints <Unknown command. Must start with 'b'> and gives an example of a valid command for starting the node
+- If user enters a valid command but uses the command incorrectly, i.e., not properly parameterized, the program explains the format of proper parameterization of that command, for example
+`Usage: b create-account <account-id> <starting-balance>`
+
+
+
+
+## Checklist
