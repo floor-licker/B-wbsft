@@ -25,6 +25,7 @@ you attempted to use `b create-account` incorrectly, you would see: `Usage: b cr
 If CMake is not installed on your local machine, install CMake.
 
 **Installing CMake on macOS**
+
 Open a terminal and run
 
 ```
@@ -34,6 +35,7 @@ brew install cmake
 ```
 
 **Installing CMake on Windows**
+
 Open PowerShell as an administrator and run 
 
 ```
