@@ -9,6 +9,7 @@ Blockchain Simulation in C++ for Charles, Utkarsh, and Jérémie.
 - Throw an error if user attempts to create an account that already exists
 - It's said that 'Ctrl+C' should end the simulation. In most terminals 'Ctrl+C' is already assigned to abort the current task and regain user control, so no command/hot-key assignment needs to be done here
 - If the user calls  `b start-node` consecutively, i.e, attempts to start node when it is already running, they recieve a message notifying them that the node is already running
+- If the user attempts to query balance from an account that doesn't exist, a print statement lets them know that the account does not exist
 
 ## Dependency Graph
 
