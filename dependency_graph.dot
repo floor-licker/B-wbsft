@@ -1,0 +1,24 @@
+digraph DependencyGraph {
+    rankdir=LR; // Left to Right layout
+
+    // Define node styles
+    node [shape=rectangle, style=filled, fillcolor="#E0E5E8", fontname="Helvetica", fontsize=12];
+
+    // Nodes
+    main_cpp [label="main.cpp"];
+    Node_h [label="Node.h"];
+    Node_cpp [label="Node.cpp"];
+    Transaction_h [label="Transaction.h"];
+    Block_h [label="Block.h"];
+    Node_Class [label="Node Class", shape=ellipse, fillcolor="#D1E8E2"];
+
+    // Edges
+    main_cpp -> Node_h;
+    main_cpp -> Node_cpp;
+    Node_h -> Transaction_h;
+    Node_h -> Block_h;
+    Node_cpp -> Node_h;
+    Node_Class -> Transaction_h;
+    Node_Class -> Block_h;
+}
+
