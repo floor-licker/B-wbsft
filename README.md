@@ -11,11 +11,4 @@ Blockchain Simulation in C++
 ## Dependency Graph
 
 
-```mermaid
-graph LR
-    A["main.cpp        "] --> B["Node.h"]
-    A --> C["Node.cpp"]
-    B --> D["Transaction.h"]
-    B --> E["Block.h"]
-    C --> B
-```
+![Dependency Graph](dependency_graph.svg)
