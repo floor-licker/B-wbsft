@@ -68,13 +68,14 @@ cd build
 cmake ..
 make
 ```
-Now there is an executable named  `b` located in the current directory (`B-wbsft/build`)
-By running the executable we initiate the program and can begin calling commands
+Now there is an executable named  `b` located in the current directory (`/B-wbsft/build`)
+By running the executable we initiate the simulation environment
 
 ```
 ./b
 ```
-Now the simulation environment has been initiated and we can begin calling the environment's functions. To start the node:
+
+Now we can begin calling the environmental functions. To start the node:
 
 ```
 b start-node
