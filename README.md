@@ -21,6 +21,9 @@ Blockchain Simulation in C++ for Charles, Utkarsh, and Jérémie.
 - If user enters a valid command but uses the command incorrectly, i.e., not properly parameterized, the program explains the format of proper parameterization of that specific command, for example if 
 you attempted to use `b create-account` incorrectly, you would see: `Usage: b create-account <account-id> <starting-balance>` which displays proper parameterization of that command
 
+## Set-up
+
+`git clone
 
 
 
