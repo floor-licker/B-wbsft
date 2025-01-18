@@ -30,6 +30,31 @@ Navigate to root directory
 
 ```cd B-wbsft```
 
+If CMake is not installed on your local machine, install CMake.
+
+**Installing CMake on macOS**
+Open a terminal and run
+
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew update
+brew install cmake
+```
+
+**Installing CMake on Windows**
+Open PowerShell as an administrator and run 
+
+```
+Set-ExecutionPolicy Bypass -Scope Process -Force; `
+[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; `
+iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+```
+Then to install CMake
+
+```
+choco install cmake --installargs 'ADD_CMAKE_TO_PATH=System'
+```
+
 
 
 ## Checklist
