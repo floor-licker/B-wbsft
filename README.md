@@ -16,10 +16,10 @@ Blockchain Simulation in C++
 ![Dependency Graph](dependency_graph.svg)
 
 ## Features
-- An additional command `b help` has been included, which prints a list of all valid commands and how to use them to the terminal
-- If user enters an invalid command, i.e., doesn't begin with `b`, the program prints `<Unknown command. Must start with 'b'>` and gives an example of a valid command for starting the node
-- If user enters a valid command but uses the command incorrectly, i.e., not properly parameterized, the program explains the format of proper parameterization of that command, for example if 
-you attempted to use `b create-account` incorrectly, you would see: `Usage: b create-account <account-id> <starting-balance>`
+- If user enters a command that doesn't begin with `b`, the program prints `<Unknown command. Must start with 'b'>` and gives an example of a valid command for starting the node
+- If the command begins with `b` but is otherwise invalid, the program tells the user that the command is not recognized and prints the list of known commands to the console
+- If user enters a valid command but uses the command incorrectly, i.e., not properly parameterized, the program explains the format of proper parameterization of that specific command, for example if 
+you attempted to use `b create-account` incorrectly, you would see: `Usage: b create-account <account-id> <starting-balance>` which displays proper parameterization of that command
 
 
 
