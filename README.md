@@ -13,7 +13,7 @@ Blockchain Simulation in C++
 
 ```mermaid
 graph LR
-    A["main.cpp"] --> B["Node.h"]
+    A["main.cpp  "] --> B["Node.h"]
     A --> C["Node.cpp"]
     B --> D["Transaction.h"]
     B --> E["Block.h"]
