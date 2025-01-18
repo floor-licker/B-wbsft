@@ -22,14 +22,6 @@ Blockchain Simulation in C++ for Charles, Utkarsh, and Jérémie.
 you attempted to use `b create-account` incorrectly, you would see: `Usage: b create-account <account-id> <starting-balance>` which displays proper parameterization of that command
 
 ## Set-up
-Clone the repository to your local machine
-
-```git clone https://github.com/floor-licker/B-wbsft.git```
-
-Navigate to root directory
-
-```cd B-wbsft```
-
 If CMake is not installed on your local machine, install CMake.
 
 **Installing CMake on macOS**
@@ -54,7 +46,32 @@ Then to install CMake
 ```
 choco install cmake --installargs 'ADD_CMAKE_TO_PATH=System'
 ```
+Now that CMake is intalled on your machine, clone this repository using git
 
+```git clone https://github.com/floor-licker/B-wbsft.git```
+
+Navigate to root directory
+
+```cd B-wbsft```
+
+From here we initiate the CMake build process with
+
+```
+cd build
+cmake ..
+make
+```
+Now there is an executable named  `b` located in the current directory (`B-wbsft/build`)
+By running the executable we initiate the program and can begin calling commands
+
+```
+./b
+```
+From here we can start the node by calling 
+
+```
+b start-node
+```
 
 
 ## Checklist
