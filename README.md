@@ -69,6 +69,7 @@ cmake ..
 make
 ```
 Now there is an executable named  `b` located in the current directory (`/B-wbsft/build`)
+
 By running the executable we initiate the simulation environment
 
 ```
@@ -83,10 +84,9 @@ b start-node
 
 For a list of functions and how to parameterize them, call
 
-'''
+```
 b help
-'''
-
+```
 
 ## Checklist
 
