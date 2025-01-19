@@ -3,7 +3,7 @@ Blockchain Simulation in C++ for Charles, Utkarsh, and Jérémie.
 
 
 ## Assumptions
-- The simulation should not allow transactions before the mining simulation is initiated, i.e., you can't call `b create-account ... ` before calling `b start-node`
+- The simulation allows transactions to queue before the node simulation is initiated, i.e., you can call `b create-account ... ` before calling `b start-node`, those transactions will just be queued and considered for the first block
 - Blocks with no transactions are still stored (maintains the property that we create blocks at regular interval of 10s)
 - The first block is created at T=10
 - Throw an error if user attempts to create an account that already exists
