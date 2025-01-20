@@ -65,6 +65,7 @@ Navigate to root directory
 From here we initiate the CMake build process with
 
 ```
+mkdir build
 cd build
 cmake ..
 make
