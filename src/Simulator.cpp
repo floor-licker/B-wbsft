@@ -68,6 +68,13 @@ int main() {
                 std::cout << "Usage: b create-account <account-id> <starting-balance>\n";
                 continue;
             }
+            
+            std::string extra;
+            if (ss >> extra) {
+                std::cout << "Error: Too many arguments provided.\n";
+                std::cout << "Usage: b create-account <account-id> <starting-balance>\n";
+                continue;
+                }
 
             if (balance < 0) {
                 std::cout << "Starting balance cannot be negative.\n";
@@ -86,6 +93,15 @@ int main() {
                 std::cout << "Usage: b transfer <from> <to> <amount>\n";
                 continue;
             }
+            
+            // Check for any extra parameters
+            std::string extra;
+            if (ss >> extra) {
+                std::cout << "Error: Too many arguments provided.\n";
+                std::cout << "Usage: b transfer <from> <to> <amount>\n";
+                continue;
+                }
+
 
             if (amount <= 0) {
                 std::cout << "Transfer amount must be positive.\n";
