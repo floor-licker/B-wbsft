@@ -94,10 +94,16 @@ void Node::blockProducer() {
 void Node::createBlock() {
     std::lock_guard<std::mutex> lock(txMutex);
 
+    
+    
+    // Optionally print that a block was empty
+    // Commented out to avoid cluttering the console
+    /*
     if (pendingTxs.empty()) {
-        // Optionally create empty blocks or skip
         std::cout << "No pending transactions. Creating an empty block.\n";
+       
     }
+     */
 
     Block newBlock;
     // Get current time as timestamp

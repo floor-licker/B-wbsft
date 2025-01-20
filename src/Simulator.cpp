@@ -50,6 +50,15 @@ int main() {
             std::cout << "Node started. Blocks will be created every 10s.\n";
         }
         
+        else if (token == "help"){
+            std::cout << "Here is a list of valid commands" << "\n";
+            std::cout << "To start a blockchain simulation: b start-node" << "\n";
+            std::cout << "To create an account: b create-acconut <address> <starting-balance>" << "\n";
+            std::cout << "To transfer between accounts: b transfer <from> <to> <amount>" << "\n";
+            std::cout << "To query balance of an account: b balance <account>" << "\n";
+            std::cout << "To end the simulation and erase all data: Ctrl+c" << "\n";
+        }
+        
         else if (token == "create-account") {
             std::string accountId;
             long long balance;
